@@ -51,9 +51,19 @@ button {
     border-radius: 8px;
 }
 
+.result-button {
+    text-align: center;
+    background-color: lightskyblue;
+    color: white;
+}
 #result-button {
     background-color: lightskyblue;
     color: white;
+}
+
+.result-integration {
+    text-align: center;
+    margin-block: 15px;
 }
 
 #calculate-button {
@@ -91,6 +101,7 @@ button {
 
 .penyakit-item {
     text-align: center;
+    margin-bottom: 0px;
 }
 
 #penyakit-item {
