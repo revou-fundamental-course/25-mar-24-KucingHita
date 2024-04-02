@@ -6,8 +6,8 @@ header>h1{
     display: flex;
 }
 
+/* Display Style */
 .container-item{
-    border: 1px solid;
     width: 100%;
     padding: 24px;
 }
@@ -21,14 +21,49 @@ header>h1{
     background-color: aliceblue;
     padding-top: 8px;
     padding-bottom: 24px;
+    border-radius: 15px;
 }
 
 .container-form{
     text-align: left;
     background-color: aliceblue;
     padding: 24px;
+    border-radius: 15px;
 }
 
 .container-form>div {
     padding: 8px;
+}
+
+.form-item {
+    height: 24px;
+    border: 0px;
+    border-radius: 8px;
+    background-color: white;
+}
+
+button {
+    border: 0px;
+    height: 32px;
+    padding-right: 24px;
+    padding-left: 24px;
+    background-color: lightgrey;
+    border-radius: 8px;
+}
+
+#calculate-button {
+    background-color:lightskyblue;
+    color: white;
+    margin-top: 5px;
+}
+
+.tambahan{
+    font-size: 18px;
+    margin-bottom: 5px;
+
+}
+
+#isi-tambahan {
+    font-size: 16px;
+    margin-block: 0px;
 }
