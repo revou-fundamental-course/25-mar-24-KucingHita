@@ -51,6 +51,11 @@ button {
     border-radius: 8px;
 }
 
+#result-button {
+    background-color: lightskyblue;
+    color: white;
+}
+
 #calculate-button {
     background-color:lightskyblue;
     color: white;
@@ -66,4 +71,29 @@ button {
 #isi-tambahan {
     font-size: 16px;
     margin-block: 0px;
+}
+
+.result-extension {
+    margin-block: 0px;
+}
+
+.consultant-button {
+    margin-block: 8px;
+}
+
+.description {
+    margin-top: 10px;
+}
+
+.penyakit {
+    background-color: aliceblue;
+}
+
+.penyakit-item {
+    text-align: center;
+}
+
+#penyakit-item {
+    margin-block: 0px;
+    text-align: center;
 }
