@@ -7,10 +7,21 @@ function calculate(){
 
         if(parseInt(bmi_value) > 0 && parseInt(bmi_value) < 18.5) {
         <label>Anda kekurangan Berat badan</label>
-        } else {
+        } 
+        
+       
+        else {
         document.getElementById('result-bmi').innerHTML = bmi_value;
         console.log('Berat badan anda normal');
         }
+
+        function changeValue() {
+            // Get the input element
+            let inputElement = document.getElementById("myInput");
+          
+            // Change the value
+            inputElement.value = "New Value";
+          }
     
     
  }
