@@ -1,6 +1,16 @@
-function peringatan(){
-    var BeratBadan = document.getElementsByClassName("Berat-Badan")
-    var Usia = document.getElementsByClassName("Usia")
-    var TinggiBAdan = document.getElementsByClassName("Tinggi-Badan")
-    console.log();
-}
+function calculate(){
+        var Berat_Badan = document.getElementsByClassName("Berat-Badan")
+        var Usia = document.getElementsByClassName("Usia")
+        var Tinggi_Badan = document.getElementsByClassName("Tinggi-Badan")
+        var bmi_value =BeratBadan/TinggiBadan*TinggiBadan
+        console.log();
+
+        if(parseInt(bmi_value) > 0 && parseInt(bmi_value) < 18.5) {
+        <label>Anda kekurangan Berat badan</label>
+        } else {
+        document.getElementById('result-bmi').innerHTML = bmi_value;
+        console.log('Berat badan anda normal');
+        }
+    
+    
+ }
