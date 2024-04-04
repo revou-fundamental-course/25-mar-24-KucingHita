@@ -1,5 +1,5 @@
 document.getElementById("bmiform").addEventListener("submit" ),function(event){
-  event.preventDefault();
+  //event.preventDefault();
 
   var sex = document.querySelector('input[name"sex"]:checked');
   var berat = parseFloat(document.getElementById("weight-input").value);
@@ -34,7 +34,7 @@ document.getElementById("bmiform").addEventListener("submit" ),function(event){
           keterangan = "Anda Termasuk Memiliki Berat Berlebih.";
           break;
       case "Obesitas":
-          keterangan = "Anda tergolong Obesitas.Segera Konsultasikan dengan dokter untuk mendapatkan saran kesehatan."
+          keterangan = "Anda tergolong Obesitas.Segera Konsultasikan dengan dokter untuk mendapatkan saran kesehatan.";
   }
   
 //Berisi pesan mengenai apa yang harus dilakukan jika tergolong dalam rentang tersebut
