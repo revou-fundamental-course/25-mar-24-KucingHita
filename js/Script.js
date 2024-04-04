@@ -65,5 +65,4 @@ document.getElementById("bmicategory").innerText = kategori;
 document.getElementById("keterangan").innerText = keterangan;
 document.getElementById("info").innerText = info;
 
-
 }
