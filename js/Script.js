@@ -1,10 +1,10 @@
-document.getElementById("bmiform").addEventListener("submit" ),function(event){
+document.getElementById("bmiform").addEventListener("submit" ,function(event){
   event.preventDefault();
 
   var sex = document.querySelector('input[name="sex"]:checked');
   var berat = parseFloat(document.getElementById("weight-input").value);
   var tahun = parseFloat(document.getElementById("age-input").value);
-  var tinggi = parseFloat(document.getElementById("height-input").value);
+  var tinggi = parseFloat(document.getElementById("height-input").value)/100;
 
   // Rumus BMI
   var bmi = berat / (tinggi * tinggi)
@@ -66,4 +66,4 @@ document.getElementById("bmicategory").innerText = kategori;
 document.getElementById("keterangan").innerText = keterangan;
 document.getElementById("info").innerText = info;
 
-}
+});
