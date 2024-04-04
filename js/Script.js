@@ -1,13 +1,19 @@
 document.getElementById("bmiform").addEventListener("submit" ),function(event){
   //event.preventDefault();
 
-  var sex = document.querySelector('input[name"sex"]:checked');
+  var sex = document.querySelector('input[name="sex"]:checked');
   var berat = parseFloat(document.getElementById("weight-input").value);
   var tahun = parseFloat(document.getElementById("age-input").value);
   var tinggi = parseFloat(document.getElementById("height-input").value);
 
   // Rumus BMI
   var bmi = berat / (tinggi * tinggi)
+
+  // Deteksi input gender
+if (!gender) {
+    alert('jenis kelamin wajib diisi');
+    return;
+}
 
   // Rentang skor Dalam kategori BMI
   var kategori;
