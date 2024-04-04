@@ -10,7 +10,7 @@ document.getElementById("bmiform").addEventListener("submit" ),function(event){
   var bmi = berat / (tinggi * tinggi)
 
   // Deteksi input gender
-if (!gender) {
+if (!sex) {
     alert('jenis kelamin wajib diisi');
     return;
 }
