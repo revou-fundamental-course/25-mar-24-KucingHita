@@ -60,10 +60,10 @@ switch(kategori){
         break;
 }
 // Update element
-document.getElementById("bmiValue").innerText = bmi.toFixed(2);
-document.getElementById("bmiCategory").innerText = kategori;
+document.getElementById("bmivalue").innerText = bmi.toFixed(2);
+document.getElementById("bmicategory").innerText = kategori;
 document.getElementById("keterangan").innerText = keterangan;
-document.getElementById("informasi").innerText = informasi;
+document.getElementById("info").innerText = info;
 
 
 }
