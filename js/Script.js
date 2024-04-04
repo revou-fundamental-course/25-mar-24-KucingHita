@@ -11,13 +11,13 @@ document.getElementById("bmiform").addEventListener("submit" ),function(event){
 
   // Deteksi input gender
 if (!sex) {
-    alert('jenis kelamin wajib diisi');
+    alert("jenis kelamin wajib diisi");
     return;
 }
 
   // Rentang skor Dalam kategori BMI
   var kategori;
-  if (bmi < 18,5){
+  if (bmi < 18.5){
      kategori = "Kurus";
   }else if (bmi >= 18.5 && bmi < 24.9){
      kategori = "Normal";
@@ -41,6 +41,7 @@ if (!sex) {
           break;
       case "Obesitas":
           keterangan = "Anda tergolong Obesitas.Segera Konsultasikan dengan dokter untuk mendapatkan saran kesehatan.";
+          break;
   }
   
 //Berisi pesan mengenai apa yang harus dilakukan jika tergolong dalam rentang tersebut
