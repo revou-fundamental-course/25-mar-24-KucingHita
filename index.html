@@ -15,7 +15,7 @@
                 <h2>Form BMI</h2>
                 <p>Berat Badan Ideal adalah impian semua orang.Tidak hanya memiliki bentuk tubuh yang menunjang penampilan,berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaimana denganmu? <br />Yuk,hitung sekarang di Kalkulator BMI.</p>
                 <section class="container-form">
-                
+                <form id="bmiform">
                     <div>
                         <label>Jenis Kelamin</label><br />
                         <input type="radio" name="sex" id="sex-man">
@@ -37,9 +37,10 @@
                         <input class="Tinggi-Badan" type="number" class="form-item" placeholder="Tinggi Badan" id="height-input"required>
                     </div>
                     <div>
-                        <button onclick="calculate"() type="button" id="calculate-button">Hitung BMI</button> 
-                        <button type="button">Reset</button>
+                        <button onclick="calculate"() type="submit" id="calculate-button">Hitung BMI</button> 
+                        <button type="reset">Reset</button>
                     </div>
+                </form>
 
                 </section>
                 <section class="tambahan">
@@ -72,7 +73,7 @@
                 </section>
 
                 <div class="consultant-button">
-                    <p id="tambahan-informasi"
+                    <p id="tambahan-informasi"></p>
                     <button type="button" id="result-button">Konsultasi Ahli gizi Via Aplikasi</button>
                     <button type="button" id="result-button">Registrasi Online Ahli Gizi</button>
                 </div>
