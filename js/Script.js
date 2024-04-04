@@ -1,5 +1,5 @@
 document.getElementById("bmiform").addEventListener("submit" ),function(event){
-  //event.preventDefault();
+  event.preventDefault();
 
   var sex = document.querySelector('input[name="sex"]:checked');
   var berat = parseFloat(document.getElementById("weight-input").value);
@@ -31,7 +31,7 @@ if (!sex) {
   var keterangan;
   switch (kategori){
       case "Kurus":
-          keterangan = "berat Badan Anda Rendah.";
+          keterangan = "Berat Badan Anda Rendah.";
           break;
       case "Normal":
           keterangan = "Berat Badan Anda Ideal.";
