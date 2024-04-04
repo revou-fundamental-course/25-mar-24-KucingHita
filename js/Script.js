@@ -37,4 +37,20 @@ document.getElementById("bmiform").addEventListener("submit" ),function(event){
           keterangan = "Anda tergolong Obesitas.Segera Konsultasikan dengan dokter untuk mendapatkan saran kesehatan."
   }
   
+//Berisi pesan mengenai apa yang harus dilakukan jika tergolong dalam rentang tersebut
+var informasi;
+switch(kategori){
+    case "Kurus":
+        informasi = "hasil BMI kurang dari 18.5.\n\n utamakan hidup sehat dan perhatikan konsumsi harian.Konsultasikan dengan dokter mengenai berat badan kalian";
+        break;
+    case "Normal":
+        informasi = "Hasil BMI diantara 18.5 dan 24.9.\n\n BMI anda tergolong sehat,pastikan asupan kalori sesuai dengan kebutuhan kalori harian dan konsumsi makanan sehat";
+        break;
+    case "Gemuk" :
+        informasi = "Hasil BMI diantara 25 dan 29.9.\n\n sebaiknya perhatikan pola makan dan berolahraga teratur untuk mencapai berat badan ideal.Utamakan hidup sehat";
+        break;
+    case "Obesitas":
+        informasi = "Hasil BMI lebih dari 30.\n\n Anda tergolong Obesitas. Segera konsultasikan dengan dokter untuk mendapatkan saran kesehatan yang tepat";
+        break;
+}
 }
