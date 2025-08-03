@@ -1,43 +1,47 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="id">
 <head>
     <meta charset="UTF-8">
-    <meta content="#c1002d" name="theme-color">
-    <meta content="#c1002d" name="msapplication-navbutton-color">
-    <meta content="yes" name="apple-mobile-web-app-capable">
-    <meta content="#c1002d" name="apple-mobile-web-app-status-bar-style">
-    <meta content="IE=edge" http-equiv="X-UA-Compatible">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Calculator BMI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPK Interaktif - Metode Weighted Product (WP)</title>
     <link rel="stylesheet" href="css/Style.css">
-</head>
-
+    <link rel="stylesheet" href="css/Form-BMI.css"> </head>
 <body>
-    <main>
-        
-        <nav>
-            <img src="Gambar/Logo BlazCat baru 1.jpg" alt="BlazFox Logo" class="logo">
-            <ul class="navbar">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="Profil.html">Profil</a></li>
-                        <li><a href="Layanan.html">Layanan</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="Form-BMI.html">Form BMI</a></li>
-                    </ul>
-                
-            </ul>
-        </nav>
+    <div class="container-item" style="max-width: 1200px; margin: auto;">
+        <h2>SPK Interaktif dengan Metode Weighted Product (WP)</h2>
 
-        <section id="judul-web">
-            <h1>Selamat datang Di Website Kementrian Kesehatan Nasional</h1>
+        <section class="container-form">
+            <h3>Langkah 1: Tentukan Struktur SPK</h3>
+            <div id="setup-container" style="display: flex; gap: 20px;">
+                <div>
+                    <label for="num-alternatives">Jumlah Alternatif:</label><br>
+                    <input type="number" id="num-alternatives" class="form-item" min="2" value="4">
+                </div>
+                <div>
+                    <label for="num-criteria">Jumlah Kriteria:</label><br>
+                    <input type="number" id="num-criteria" class="form-item" min="2" value="4">
+                </div>
+            </div>
+            <button id="generate-table-btn" style="margin-top: 15px;">Buat Tabel Input</button>
         </section>
 
-        
-    </main>
-    <footer></footer>
+        <section id="dynamic-input-section" class="container-form" style="margin-top: 20px; display: none;">
+            <h3>Langkah 2: Masukkan Semua Data</h3>
+            <form id="spk-form">
+                <div id="criteria-input-container" style="margin-bottom: 20px;"></div>
+                
+                <div id="alternatives-input-container"></div>
+
+                <button type="submit" style="margin-top: 15px;">Hitung Hasil Akhir</button>
+            </form>
+        </section>
+
+        <section id="result-section" class="container-result" style="margin-top: 20px; display: none; padding: 20px; text-align: left;">
+            <h2>Hasil Analisis SPK</h2>
+            <div id="result-content"></div>
+        </section>
+    </div>
+
     <script src="js/Script.js"></script>
 </body>
-
-</html> 
+</html>
